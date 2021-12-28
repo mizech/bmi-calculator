@@ -10,8 +10,8 @@ class BmiViewModel: ViewModel() {
     private var currentWeight = MutableLiveData<Double>()
 
     init {
-        currentHeight.value = 150.0
-        currentWeight.value = 50.0
+        currentHeight.value = 0.0
+        currentWeight.value = 0.0
     }
 
     fun setCurrentHeight(value: Double) {
