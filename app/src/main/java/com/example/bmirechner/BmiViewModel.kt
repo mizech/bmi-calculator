@@ -22,14 +22,6 @@ class BmiViewModel: ViewModel() {
         currentWeight.value = value
     }
 
-    fun getCurrentHeightValue(): Double {
-        return currentHeight.value!!
-    }
-
-    fun getCurrentWeightValue(): Double {
-        return currentWeight.value!!
-    }
-
     fun getCurrentHeight(): MutableLiveData<Double> {
         return currentHeight
     }
