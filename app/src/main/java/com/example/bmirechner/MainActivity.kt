@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(BmiViewModel::class.java)
 
-        binding.currentWeightTextView.text = viewModel.getCurrentWeightValue().toString()
-        binding.currentHeightTextView.text = viewModel.getCurrentHeightValue().toString()
+        binding.currentWeightTextView.text = viewModel.getCurrentWeight().value.toString()
+        binding.currentHeightTextView.text = viewModel.getCurrentHeight().value.toString()
 
         binding.heightSeek.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
