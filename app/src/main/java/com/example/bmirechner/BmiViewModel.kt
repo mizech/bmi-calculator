@@ -31,8 +31,8 @@ class BmiViewModel: ViewModel() {
     }
 
     fun computeBmi(): Double {
-        val factor = 100
-        val heightInMeter = currentHeight.value!! / factor
+        val factor = 10
+        val heightInMeter = currentHeight.value!! / 100.0
         val bmi = currentWeight.value!! / heightInMeter.pow(2)
         return round(bmi * factor) / factor
     }
