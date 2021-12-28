@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">BmiRechner</string>
+    <string name="text_height">Body height</string>
+    <string name="text_weight">Body weight</string>
+    <string name="text_bmi">Your BMI is:</string>
+    <string name="text_underweight">Underweight</string>
+    <string name="text_normal_weight">Normal weight</string>
+    <string name="text_overweight">Overweight</string>
+    <string name="text_heavy_overweight">Heavy overweight</string>
+    <string name="error">Fehler!</string>
 </resources>

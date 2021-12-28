@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         var messageText = ""
         when {
-            bmi < 20 -> messageText = "Sie haben Untergewicht."
-            bmi >= 20 && bmi <=25 -> messageText = "Sie haben Normalgewicht."
-            bmi > 25 && bmi <= 30 -> messageText = "Sie haben Übergewicht."
-            bmi > 30 -> messageText = "Sie haben starkes Übergewicht."
-            else -> messageText = "Fehler!"
+            bmi < 20 -> messageText = resources.getString(R.string.text_underweight)
+            bmi in 20.0..25.0 -> messageText = resources.getString(R.string.text_normal_weight)
+            bmi > 25 && bmi <= 30 -> messageText = resources.getString(R.string.text_overweight)
+            bmi > 30 -> messageText = resources.getString(R.string.text_heavy_overweight)
+            else -> messageText = resources.getString(R.string.error)
         }
 
         binding.messageTextView.text = messageText
