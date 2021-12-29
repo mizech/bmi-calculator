@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
         val bmi = viewModel.computeBmi()
         binding.resultTextView.text = bmi.toString()
 
-        binding.messageTextView.setTextColor(Color.parseColor("#FFFF00"))
+        binding.messageTextView.setTextColor(Color.parseColor("#A52A2A"))
         var messageText = ""
         when {
             bmi < 20 -> { messageText = resources.getString(R.string.text_underweight) }
             bmi in 20.0..25.0 -> {
                 messageText = resources.getString(R.string.text_normal_weight)
-                binding.messageTextView.setTextColor(Color.parseColor("#00FF00"))
+                binding.messageTextView.setTextColor(Color.parseColor("#006400"))
             }
             bmi > 25 && bmi <= 30 -> messageText = resources.getString(R.string.text_overweight)
             bmi > 30 -> {
