@@ -1,5 +1,6 @@
 package com.example.bmirechner
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
@@ -15,12 +16,19 @@ class MainActivity : AppCompatActivity() {
         val bmi = viewModel.computeBmi()
         binding.resultTextView.text = bmi.toString()
 
+        binding.messageTextView.setTextColor(Color.parseColor("#FFFF00"))
         var messageText = ""
         when {
-            bmi < 20 -> messageText = resources.getString(R.string.text_underweight)
-            bmi in 20.0..25.0 -> messageText = resources.getString(R.string.text_normal_weight)
+            bmi < 20 -> { messageText = resources.getString(R.string.text_underweight) }
+            bmi in 20.0..25.0 -> {
+                messageText = resources.getString(R.string.text_normal_weight)
+                binding.messageTextView.setTextColor(Color.parseColor("#00FF00"))
+            }
             bmi > 25 && bmi <= 30 -> messageText = resources.getString(R.string.text_overweight)
-            bmi > 30 -> messageText = resources.getString(R.string.text_heavy_overweight)
+            bmi > 30 -> {
+                messageText = resources.getString(R.string.text_heavy_overweight)
+                binding.messageTextView.setTextColor(Color.parseColor("#FF0000"))
+            }
             else -> messageText = resources.getString(R.string.error)
         }
 
