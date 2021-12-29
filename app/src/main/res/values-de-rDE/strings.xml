@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI Rechner</string>
+    <string name="text_height">Körpergrösse (cm)</string>
+    <string name="text_weight">Gewicht (kg)</string>
+    <string name="text_bmi">Ihr BMI beträgt:</string>
+    <string name="text_underweight">Untergewicht</string>
+    <string name="text_normal_weight">Normalgewicht</string>
+    <string name="text_overweight">Übergewicht</string>
+    <string name="text_heavy_overweight">Starkes Übergewicht</string>
+    <string name="error">Fehler!</string>
+</resources>

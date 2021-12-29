@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
-    <string name="text_height">Body height</string>
-    <string name="text_weight">Body weight</string>
+    <string name="text_height">Body height (cm)</string>
+    <string name="text_weight">Body weight (kg)</string>
     <string name="text_bmi">Your BMI is:</string>
     <string name="text_underweight">Underweight</string>
     <string name="text_normal_weight">Normal weight</string>
