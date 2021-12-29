@@ -1,6 +1,6 @@
 # BMI Calculator
 
-Android [Body-Mass-Index](https://en.wikipedia.org/wiki/Body_mass_index)-Calculator
+Android [Body-Mass-Index](https://en.wikipedia.org/wiki/Body_mass_index) Calculator
 
 <div style="text-align: center">
   <img src="./images/underweight.png" alt="screenshot 1" width="250" />&nbsp;&nbsp; 
